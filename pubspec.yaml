@@ -1,0 +1,42 @@
+name: speaker_cleaner
+description: Speaker Cleaner — play calibrated low-frequency tones and vibration to eject water and dust from your phone's speakers.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  # Bundled cleaning tones + completion sound (see app_spec content.audio).
+  audioplayers: ^5.2.1
+  # .mp4 background used by splash/onboarding archive media.
+  video_player: ^2.8.2
+  # On-device (offline) persistence for 7-day plan progress (content.persistence).
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/media/
+    - assets/audio/
+
+  # Bundled Poppins family (design_tokens.font.display/body = Poppins).
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700

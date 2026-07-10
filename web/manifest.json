@@ -1,0 +1,11 @@
+{
+  "name": "Speaker Cleaner",
+  "short_name": "Speaker Cleaner",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#F5F7FA",
+  "theme_color": "#007AFF",
+  "description": "Eject water and dust from your phone's speakers.",
+  "orientation": "portrait-primary",
+  "icons": []
+}
